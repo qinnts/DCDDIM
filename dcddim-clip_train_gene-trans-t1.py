@@ -395,7 +395,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 datasets_all = ["UKB","ADNI","PPMI"]
 datasets_use = ["UKB","ADNI","PPMI"]
 
-pretrain_dir = f"./generation_models/UKB_iddim_genetranst1" 
+pretrain_dir = f"./generation_models/UKB_dcddim_genetranst1" 
 pre_ep = 500
 
 pretrain_dir2 = f"./generation_models/UKB-ADNI-PPMI_T1-GENE-CLIP_MAE_SNPMask_1000_v3_ff" #_Mask_{opt.mask_dropout}_{opt.mask_dropout2}
@@ -404,8 +404,8 @@ pre_ep2 = 100
 ae_dir = f"./generation_models/UKB-ADNI-PPMI_MRI_VAE-32" #140
 pre_ep3 = 200
 
-save_dir = f"./generation_models/{'-'.join(datasets_use)}_iddim_genetranst1" 
-log_path =  f"./logs/log_{'-'.join(datasets_use)}_iddim_genetranst1" 
+save_dir = f"./generation_models/{'-'.join(datasets_use)}_dcddim_genetranst1" 
+log_path =  f"./logs/log_{'-'.join(datasets_use)}_dcddim_genetranst1" 
 
 # log_UKB-ADNI_cs400_iddim_genetranst1
 os.system("mkdir -p {}".format(save_dir))
