@@ -407,7 +407,7 @@ SNP_TOPK = 1000
 clip_dir = f"./generation_models/UKB-ADNI-PPMI_T1-GENE-CLIP_MAE_SNPMask_1000_v3_ff" #_Mask_{opt.mask_dropout}_{opt.mask_dropout2}
 pre_ep2 = 100
 
-dm_dir = f"./generation_models/{'-'.join(datasets_use)}_iddim_genetranst1"
+dm_dir = f"./generation_models/{'-'.join(datasets_use)}_dcddim_genetranst1"
 pre_ep3 = 250#450
 
 timesteps = 500
@@ -554,7 +554,7 @@ term_value2 = 2 - term_value
 
 sparse_flag2 = 1
 for w_i, w in enumerate(ws_test):
-    save_dir =  f"./generation_models/UKB_iddim_genetranst132_sample/"
+    save_dir =  f"./generation_models/UKB_dcddim_genetranst132_sample/"
     os.system("mkdir -p {}".format(save_dir))
 
     with torch.no_grad():
