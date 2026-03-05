@@ -9,13 +9,13 @@ Source codes for the paper "Domain-Constrained Denoising Diffusion Implicit Mode
 
 ```bash
 # The training process of DCDDIM
-python ddim-clip_train_attn_interp_gene-trans-t1.py
+python dcddim-clip_train_gene-trans-t1.py
 ```
 ## Testing
 
 ```bash
 # The testing process of DCDDIM
-python ddim-clip_knock-test_attn_interp_gene-trans-t1.py
+python dcddim-clip_knock-test_gene-trans-t1.py
 ```
 
 ## License
